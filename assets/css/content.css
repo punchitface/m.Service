@@ -79,7 +79,6 @@
 
 .service-list {
     margin-top: 40px;
-
 }
 
 .service-list__description {
@@ -168,10 +167,13 @@
 }
 
 .company-block {
+    margin: 0 auto;
     margin-top: 20px;
-    width: 100%;
+    display: inline-block;
+    width: 400px;
     text-align: center;
 }
+
 
 .company-name {
     font-family: "Plumb Condensed", sans-serif;
@@ -183,6 +185,13 @@
     display: block;
     padding-top: 15px;
 }
+
+@media screen and (max-width: 810px) {
+    .company-block {
+        width: 300px;
+    }
+}
+
 
 .demo {
     font-family: "Helvetica", sans-serif;
@@ -222,3 +231,103 @@
 .img-height {
     margin-top: 15px;
 }
+
+
+@media screen and (max-width: 610px) {
+    .company-block {
+        width: 200px;
+        vertical-align: top;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 414px) {
+    .service-list__content-description {
+        text-align: center;
+    }
+
+    .company-block {
+        width: 150px;
+        text-align: center;
+        margin-left: 35px;
+    }
+    .adaptive-compare {
+        display: block;
+        width: 300px;
+        margin: 0 auto;
+        height: 100%;
+    }
+    .compare-box {
+        width: 300px;
+    }
+
+    .block-1c {
+        display: block;
+        margin: 0 auto;
+        width: 280px;
+        height: 190px;
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .company-block {
+        margin-left: 23px;
+    }
+
+    .adaptive-compare {
+        display: block;
+        width: 330px;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .compare-box {
+        width: 330px;
+    }
+
+    .block-1c {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 355px) {
+    .company-block {
+        margin-left: 10px;
+    }
+
+    .adaptive-compare {
+        display: block;
+        width: 315px;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    .compare-box {
+        width: 100%;
+    }
+
+    .block-1c {
+        display: block;
+        width: 280px;
+        margin: 0 auto;
+    }
+
+    .service-list__content-description {
+        text-align: center;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .company-block {
+        margin-left: 0;
+        width: 100%;
+    }
+}
+
+.adaptive-compare {
+    background: #f7f7f7;
+}
+
